@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.nateswanberg.gmail-counter</string>
+    <string>com.nateswanberg.get-moto-stats</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/nate/Repositories/gmail-counter/gmail-counter.sh</string>
+        <string>/Users/nate/Repositories/moto-modem/get-moto-stats.sh</string>
     </array>
     <key>StartInterval</key>
-    <integer>300300300</integer>
+    <integer>300</integer>
 </dict>
 </plist>
