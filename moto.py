@@ -9,7 +9,10 @@ import time
 from bs4 import BeautifulSoup
 import requests
 
-HNAP_URI = "http://192.168.100.1/HNAP1/"
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+HNAP_URI = "https://192.168.100.1/HNAP1/"
 SOAP_NAMESPACE = "http://purenetworks.com/HNAP1/"
 
 KNOWN_ACTIONS = [
@@ -25,6 +28,7 @@ KNOWN_ACTIONS = [
 ]
 
 session = requests.Session()
+session.verify = False
 
 
 def millis():
@@ -103,7 +107,7 @@ def login(username, password):
 
 
 def main():
-    login("admin", "motorola")
+    login("admin", "fuckyou")
 
     results = do_actions(*KNOWN_ACTIONS)
 
