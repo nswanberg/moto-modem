@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-cat ~/log/modem.log | jq -c '{ts: .ts, downstream: .data.GetMotoStatusDownstreamChannelInfoResponse.MotoConnDownstreamChannel, upstream: .data.GetMotoStatusUpstreamChannelInfoResponse.MotoConnUpstreamChannel}' | ./power.py $@
+cat ~/Dropbox/Records/Tech/mb8611/mb8611.log | jq -c '{ts: .ts, downstream: .data.GetMotoStatusDownstreamChannelInfoResponse.MotoConnDownstreamChannel, upstream: .data.GetMotoStatusUpstreamChannelInfoResponse.MotoConnUpstreamChannel}' | ./power.py $@
+

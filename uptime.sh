@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-cat ~/log/modem.log | jq '{ts: .ts, uptime: .data.GetMotoStatusConnectionInfoResponse.MotoConnSystemUpTime}'
+cat ~/Dropbox/Records/Tech/mb8611/mb8611.log | jq '{ts: .ts, uptime: .data.GetMotoStatusConnectionInfoResponse.MotoConnSystemUpTime}'
+
